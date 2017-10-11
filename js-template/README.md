@@ -61,7 +61,7 @@ _Make sure to include the below "scripts" in the package.json file._
 ```
 ...
 "scripts": {
-  "test": "jasmine"
+  "test": "karma start karma.conf.js"
 }
 ...
 ```

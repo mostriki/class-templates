@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "karma start karma.conf.js"
   },
   "author": "",
   "license": "ISC",

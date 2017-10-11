@@ -73,15 +73,9 @@ gulp.task('bowerJS', function () {
 });
 
 gulp.task('bowerCSS', function () {
-  return gulp.src(lib.ext('css').files)
+  return gulp.src(lib.ext('css').files).concat(['css/*.css']))
     .pipe(concat('vendor.css'))
     .pipe(gulp.dest('./build/css'));
-});
-
-gulp.task("cssBuild", function() {
-  gulp.src(['css/*.css'])
-  .pipe(concat('vendor.css'))
-  .pipe(gulp.dest('./build/css'))
 });
 
 gulp.task('bower', ['bowerJS', 'bowerCSS']);

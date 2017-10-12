@@ -85,10 +85,8 @@ _configure jshint for ES6 by creating a .jshintrc file in the root directory._
 ___
 # Javascript Track Project Clone
 
-* `npm init`
 * `npm install`
 * `npm install bower -g`
-* `bower init`
 * `bower install`
 * `gulp build`
 ___

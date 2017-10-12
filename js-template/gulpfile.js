@@ -25,7 +25,7 @@ var buildProduction = utilities.env.production;
 
 // dependencies
 gulp.task('concatInterface', function() {
-  return gulp.src(['./js/pingpong-interface.js', './js/*-interface.js'])
+  return gulp.src(['./js/*-interface.js'])
     .pipe(concat('allConcat.js'))
     .pipe(gulp.dest('./tmp'));
 });

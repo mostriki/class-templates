@@ -106,9 +106,9 @@ ___
 ___
 ___
 
-Things to delete once I confirm that the flow works:
+#### Things to delete once I confirm that the flow works:
 
-### Jasmine (Install before Karma)
+#### Jasmine (Install before Karma)
 * ` ./node_modules/.bin/jasmine init`
 _Make sure to include the below "scripts" in the package.json file._
 
@@ -119,7 +119,7 @@ _Make sure to include the below "scripts" in the package.json file._
 }
 ...
 ```
-### Karma
+#### Karma
 _Use provided template "karma.conf.js" instead._
 
 _OR_

@@ -100,12 +100,9 @@ ___
 
 * OPTIONAL: globaly install gulp if you need to: `npm install gulp -g`
 * OPTIONAL: globaly install bower if you need to: `npm install bower -g`
-
-
 ___
 ___
 ___
-
 #### Things to delete once I confirm that the flow works:
 
 #### Jasmine (Install before Karma)

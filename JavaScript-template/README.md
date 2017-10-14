@@ -92,7 +92,7 @@ ___
 * `bower install`
 * `gulp build`
 ___
-# BrowserSync
+### BrowserSync
 
 * `gulp serve` to run on a local server.
 ___

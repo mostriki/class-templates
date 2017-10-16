@@ -18,6 +18,8 @@
 * gulpfile.js
 * index.html
 * README.md
+* karma.conf.js
+* package.json
 
 
 ```

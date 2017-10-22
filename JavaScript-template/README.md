@@ -31,7 +31,7 @@
 </head>
 ```
 ___
-### Installation Option 1 (recommended)
+### Installation Option 1 (Recommended)
 
 * `$ git init`
 * `git remote add [INITIALS] [GitHub Rep]`
@@ -102,25 +102,3 @@ ___
 
 * OPTIONAL: globaly install gulp if you need to: `npm install gulp -g`
 * OPTIONAL: globaly install bower if you need to: `npm install bower -g`
-___
-___
-___
-#### Things to delete once I confirm that the flow works:
-
-#### Jasmine (Install before Karma)
-* ` ./node_modules/.bin/jasmine init`
-_Make sure to include the below "scripts" in the package.json file._
-
-```
-...
-"scripts": {
-  "test": "jasmine"
-}
-...
-```
-#### Karma
-_Use provided template "karma.conf.js" instead._
-
-_OR_
-
-_`karma init` in root proj directory_

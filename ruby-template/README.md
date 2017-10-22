@@ -8,10 +8,6 @@
 
 _..._
 
-## Specs
-
-
-
 ## Setup/Installation Requirements
 
 1. _`$ git clone` [https://github.com/mostriki/...](https://github.com/mostriki/...)_

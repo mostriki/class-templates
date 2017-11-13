@@ -46,3 +46,14 @@ Rails has a number of built-in generators (see rails g --help for a list).
 10. _Migrate using `$ rake db:migrate`, and prepare the test database with `$ rake db:test:prepare`, and Active Record will create the schema.rb file in db._
 
 11. _Run `$ rails server` to start the rails server._
+
+
+### Capybara set up
+
+1. _Add 'capybara' to your Gemfile in the test section._
+
+2. _Run `$ bundle install` in the terminal._
+
+3. _Add require 'capybara/rails' at the top of the spec/rails_helper.rb file after require 'rspec/rails' (If added before require 'rspec/rails', you will get errors)._
+
+4. _Create a spec/features folder to hold integration test files._

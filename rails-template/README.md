@@ -17,15 +17,23 @@ DO FIRST
 > tmp: This is where your web server's temporary files go.
 > vendor: Gems can be installed here in some cases (but not any cases we'll deal with).
 ```
-3. _Update the existing Gemfile to include `gem 'bootstrap-sass', '~> 3.3.7'`, gem 'jquery-rails', in the top of the file, and  `gem 'rspec-rails'`, `gem 'launchy'`, `gem 'pry'`, and `gem 'shoulda-matchers'` in the `group :development, :test do` section of the the Gemfile._
+3. _Update the existing Gemfile to include:_
+* _gem 'jquery-rails', in the top of the file_
+* _`gem 'bootstrap'`_
+* _`gem 'rspec-rails'`, `gem 'launchy'`,  `gem 'pry'`, `gem 'capybara'`, `gem 'shoulda-matchers'`, and `gem install 'factory_bot_rails'` in the `group :development, :test do` section of the the Gemfile._
 
-4. _Make sure your `application.css` file looks like this `app/assets/stylesheets/application.scss` and has `@import "bootstrap-sprockets";` and `@import "bootstrap";` at the top for bootstrap-sass to work._
+4. _Make sure your `application.css` file looks like this `app/assets/stylesheets/application.scss` and has `@import "bootstrap";` at the top for bootstrap to work._
 
-5. _Run `$ bundle update` then `$ bundle install`_
+5. _Add Bootstrap dependencies and Bootstrap to your application.js_
+* _`//= require jquery3`_
+* _`//= require popper`_
+* _`//= require bootstrap-sprockets`_
 
-6. _Run `$ rails generate rspec:install` to create our the spec folder, a rails_helper.rb, and a spec_helper.rb._
+6. _Run `$ bundle update` then `$ bundle install`_
 
-7. _Add the following configuration code to the end of our `rails_helper.rb` file (after the Rspec configuration block)._
+7. _Run `$ rails generate rspec:install` to create our the spec folder, a rails_helper.rb, and a spec_helper.rb._
+
+8. _Add the following configuration code to the end of our `rails_helper.rb` file (after the Rspec configuration block)._
 ```
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
@@ -34,28 +42,20 @@ Shoulda::Matchers.configure do |config|
   end
 end
 ```
+9. _Add require 'capybara/rails' at the top of the spec/rails_helper.rb file after require 'rspec/rails' (If added before require 'rspec/rails', you will get errors)._
 
-8. _Confirm that our `config/database.yml` file has the details for the database(s) that we want build._
+10. _Create a spec/features folder to hold integration test files._
 
-9. _Run `$ rake db:create` to create our databases._
+11. _Confirm that our `config/database.yml` file has the details for the database(s) that we want build._
 
-10. _Next run `$ rails generate migration [TABLE NAME HERE]` or `rails g migration [TABLE NAME HERE]` to create a table using the Rails migration generator._
+12. _Run `$ rake db:create` to create our databases._
+
+13. _Next run `$ rails generate migration [TABLE NAME HERE]` or `rails g migration [TABLE NAME HERE]` to create a table using the Rails migration generator._
 
 ```
 Rails has a number of built-in generators (see rails g --help for a list).
 ```
 
-11. _After you've built your tables in the migration file, migrate using `$ rake db:migrate`, and prepare the test database with `$ rake db:test:prepare`, and Active Record will create the schema.rb file in db._
+14. _After you've built your tables in the migration file, migrate using `$ rake db:migrate`, and prepare the test database with `$ rake db:test:prepare`, and Active Record will create the schema.rb file in db._
 
-12. _Run `$ rails server` to start the rails server._
-
-
-### Capybara set up
-
-1. _Add 'capybara' to your Gemfile in the test section._
-
-2. _Run `$ bundle install` in the terminal._
-
-3. _Add require 'capybara/rails' at the top of the spec/rails_helper.rb file after require 'rspec/rails' (If added before require 'rspec/rails', you will get errors)._
-
-4. _Create a spec/features folder to hold integration test files._
+15. _Run `$ rails s` or `$ rails server` to start the rails server._

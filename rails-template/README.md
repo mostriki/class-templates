@@ -59,3 +59,9 @@ Rails has a number of built-in generators (see rails g --help for a list).
 14. _After you've built your tables in the migration file, migrate using `$ rake db:migrate`, and prepare the test database with `$ rake db:test:prepare`, and Active Record will create the schema.rb file in db._
 
 15. _Run `$ rails s` or `$ rails server` to start the rails server._
+
+
+## Debugging Tips
+* _`save_and_open_page`_
+* _`binding.pry`_
+* _`$ git diff [FILE NAME]`_

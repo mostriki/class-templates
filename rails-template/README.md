@@ -42,7 +42,7 @@ Shoulda::Matchers.configure do |config|
   end
 end
 ```
-9. _Add require 'capybara/rails' at the top of the spec/rails_helper.rb file after require 'rspec/rails' (If added before require 'rspec/rails', you will get errors)._
+9. _Add `require 'capybara/rails'` at the top of the `spec/rails_helper.rb` file after `require 'rspec/rails'` (If added before `require 'rspec/rails'`, you will get errors)._
 
 10. _Create a spec/features folder to hold integration test files._
 

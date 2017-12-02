@@ -66,3 +66,4 @@ Rails has a number of built-in generators (see rails g --help for a list).
 * _`puts page.body`_
 * _`binding.pry`_
 * _`$ git diff [FILE NAME]`_
+* _`$ rails new --help`_

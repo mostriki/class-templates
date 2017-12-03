@@ -18,9 +18,9 @@ DO FIRST
 > vendor: Gems can be installed here in some cases (but not any cases we'll deal with).
 ```
 3. _Update the existing Gemfile to include:_
-* _gem 'jquery-rails', in the top of the file_
+* _gem `'jquery-rails'`, in the top of the file_
 * _`gem 'bootstrap'`_
-* _`gem 'rspec-rails'`, `gem 'launchy'`,  `gem 'pry'`, `gem 'capybara'`, `gem 'shoulda-matchers'`, and `gem install 'factory_bot_rails'` in the `group :development, :test do` section of the the Gemfile._
+* _`gem 'rspec-rails'`, `gem 'launchy'`,  `gem 'pry'`, `gem 'capybara'`, `gem 'shoulda-matchers'`, and `gem 'factory_bot_rails'` in the `group :development, :test do` section of the the Gemfile._
 
 4. _Make sure your `application.css` file looks like this `app/assets/stylesheets/application.scss` and has `@import "bootstrap";` at the top for bootstrap to work._
 
